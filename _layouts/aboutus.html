@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="https://www.5w.lv/en/aboutus" />
+    <link rel="alternate" hreflang="lv" href="https://www.5w.lv/lv/aboutus" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/aboutus.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/32х32.png">
+    
+    <link rel="icon" href="../assets/images/16х16.png" sizes="16x16" type="image/png">
+    <!-- Larger favicon for high-resolution displays (32x32px) -->
+    <link rel="icon" href="../assets/images/32х32.png" sizes="32x32" type="image/png">
+    <!-- Optional: 48x48px favicon for some browsers or desktop apps -->
+    <link rel="icon" href="../assets/images/48х48.png" sizes="48x48" type="image/png">
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "5w",
+          "url": "https://www.5w.lv",
+          "logo": "https://www.5w.lv/assets/images/32x32.png",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+37127457071",
+            "email":"contact@5w.lv",
+            "contactType": "Customer Service"
+          }
+        }
+        </script>
+
+</head>
+<body class="body">
+    {% include header.html %}  <!-- Reusable Header -->
+    <div >
+        <div class="aboutus-first-container">
+            <h1 id="header-01">{{ site.data.translations[page.lang].aboutus_header}}</h1>
+            <p class="regular-text">{{ site.data.translations[page.lang].aboutus_first_text}}</p>
+        </div>
+        <img class="aboutus-first-image" src="../assets/images/Aboutus_main.jpg">
+        <div class="aboutus-second-container">
+            <h1 style="margin: 0;" id="header-02">{{ site.data.translations[page.lang].aboutus_second_header}}</h1>
+            <p class="regular-text">{{ site.data.translations[page.lang].aboutus_second_text}}</p>
+        </div>
+        <div class="aboutus-third-block-container">
+            <h1 style="margin: 0;" id="header-03">{{ site.data.translations[page.lang].aboutus_third_header}}</h1>
+            <p class="regular-text aboutus-third-block-text">{{ site.data.translations[page.lang].aboutus_third_text}}</p>
+            <div class="approach-bloks-container">
+                <div class="approach-block-container">
+                    <div class="approach-block-content">
+                        <p class="approach-block-number">01</p>
+                        <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_01}}</p>
+                        <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_01}}</p>
+                    </div>
+                </div>
+                <div class="approach-block-container">
+                    <div class="approach-block-content">
+                        <p class="approach-block-number">02</p>
+                        <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_02}}</p>
+                        <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_02}}</p>
+                    </div>
+                </div>
+                <div class="approach-block-container">
+                    <div class="approach-block-content">
+                        <p class="approach-block-number">03</p>
+                        <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_03}}</p>
+                        <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_03}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="approach-bloks-container-02">
+                <div class="approach-block-container-02">
+                    <div class="approach-block-content-02">
+                        <p class="approach-block-number">04</p>
+                        <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_04}}</p>
+                        <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_04}}</p>
+                    </div>
+                </div>
+                <div class="approach-block-container-02">
+                    <div class="approach-block-content-02">
+                        <p class="approach-block-number">05</p>
+                        <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_05}}</p>
+                        <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_05}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="aboutus-forth-block-container">
+            <h1 class="aboutus-forth-block-header" id="header-04">{{ site.data.translations[page.lang].aboutus_forth_block_header}}</h1>
+            <div class="aboutus-forth-block-content">
+                <div class="aboutus-forth-block-left-side-container">
+                    <div class="forth-block-content-container" >
+                        <p class="forth-block-content-header">{{ site.data.translations[page.lang].forth_block_content_header_01}}</p>
+                        <p class="regular-text forth-block-content-text">{{ site.data.translations[page.lang].forth_block_content_text_01}}</p>
+                    </div>
+                    <div class="forth-block-content-container" >
+                        <p class="forth-block-content-header">{{ site.data.translations[page.lang].forth_block_content_header_02}}</p>
+                        <p class="regular-text forth-block-content-text">{{ site.data.translations[page.lang].forth_block_content_text_02}}</p>
+                    </div>
+                    <div class="forth-block-content-container" >
+                        <p class="forth-block-content-header">{{ site.data.translations[page.lang].forth_block_content_header_03}}</p>
+                        <p class="regular-text forth-block-content-text">{{ site.data.translations[page.lang].forth_block_content_text_03}}</p>
+                    </div>
+                    <div class="forth-block-content-container" >
+                        <p class="forth-block-content-header">{{ site.data.translations[page.lang].forth_block_content_header_04}}</p>
+                        <p class="regular-text forth-block-content-text">{{ site.data.translations[page.lang].forth_block_content_text_04}}</p>
+                    </div>
+                    <div class="forth-block-content-container forth-block-content-container-last" >
+                        <p class="forth-block-content-header">{{ site.data.translations[page.lang].forth_block_content_header_05}}</p>
+                        <p class="regular-text forth-block-content-text">{{ site.data.translations[page.lang].forth_block_content_text_05}}</p>
+                    </div>
+                </div>
+                <div class="aboutus-forth-block-image-container">
+                    <img class="aboutus-forth-block-image" src="../assets/images/AboutUs_Forth_Block.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="aboutus-fifth-block-container">
+            <div class="aboutus-fifth-block-content-container">
+                <div class="aboutus-fifth-block-left-content-container">
+                    <div class="aboutus-fifth-block-left-left-content-container">
+                        <img class="aboutus-fifth-block-content-image" src="../assets/images/Exellence_Icon.svg">
+                        <p class="aboutus-fifth-block-content-header">{{ site.data.translations[page.lang].about_fifth_block_content_header01}}</p>
+                        <p class="regular-text aboutus-fifth-block-content-text">{{ site.data.translations[page.lang].about_fifth_block_content_text01}}</p>
+                    </div>
+                    <div class="aboutus-fifth-block-left-right-content-container">
+                        <div class="aboutus-fifth-block-left-right-top-content-container">
+                            <img class="aboutus-fifth-block-content-image" src="../assets/images/Integrity_Icon.svg">
+                            <p class="aboutus-fifth-block-content-header">{{ site.data.translations[page.lang].about_fifth_block_content_header02}}</p>
+                            <p class="regular-text aboutus-fifth-block-content-text">{{ site.data.translations[page.lang].about_fifth_block_content_text02}}</p>
+                        </div>
+                        <div class="aboutus-fifth-block-left-right-bottom-content-container">
+                            <img class="aboutus-fifth-block-content-image" src="../assets/images/Collaboration_Icon.svg">
+                            <p class="aboutus-fifth-block-content-header">{{ site.data.translations[page.lang].about_fifth_block_content_header03}}</p>
+                            <p class="regular-text aboutus-fifth-block-content-text">{{ site.data.translations[page.lang].about_fifth_block_content_text03}}</p>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="aboutus-fifth-block-header">{{ site.data.translations[page.lang].about_fifth_block_header}}</h1>
+            </div>
+        </div>
+        <div class="aboutus-sixt-block-container">
+            <p class="aboutus-sixt-block-header">{{ site.data.translations[page.lang].about_sixt_block_header}}</p>
+            <p class="regular-text aboutus-sixt-block-text" >{{ site.data.translations[page.lang].about_sixt_block_text}}</p>
+            {% if page.lang == "lv" %}
+            <button class="aboutus-contact-us-button">
+                <p class="aboutus-contact-us-button-text"  onclick="location.href='/lv/contact'">{{ site.data.translations[page.lang].contact_header}}</p>
+                <img class="angled-arrow">
+            </button>
+            {% else %}
+            <button class="aboutus-contact-us-button">
+                <p class="aboutus-contact-us-button-text"  onclick="location.href='/en/contact'">{{ site.data.translations[page.lang].contact_header}}</p>
+                <img class="angled-arrow">
+            </button>
+            {% endif %}
+        </div>
+    </div>
+
+    {% include footer.html %}  <!-- Reusable Footer -->
+    {% include loader.html %}
+</body>
+<script type="text/javascript" src="../assets/scripts/languageButton.js"></script>
+<script type="text/javascript" src="../assets/scripts/movingTextUpAnim.js"></script>
+<script type="text/javascript" src="../assets/scripts/aboutUsTransition.js"></script>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description" content="{{ site.data.translations[page.lang].meta_home_description }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="https://www.5w.lv/en/" />
+    <link rel="alternate" hreflang="lv" href="https://www.5w.lv/lv/" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/home.css">
+    <link rel="stylesheet" href="../assets/css/home-mob.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/32х32.png">
+    
+    <link rel="icon" href="../assets/images/16х16.png" sizes="16x16" type="image/png">
+    <!-- Larger favicon for high-resolution displays (32x32px) -->
+    <link rel="icon" href="../assets/images/32х32.png" sizes="32x32" type="image/png">
+    <!-- Optional: 48x48px favicon for some browsers or desktop apps -->
+    <link rel="icon" href="../assets/images/48х48.png" sizes="48x48" type="image/png">
+</head>
+<body>
+
+    {% include header.html %}  <!-- Reusable Header -->
+
+    <div class="main">
+        <h1 class="main-header" id="header-04">
+            <span class="header-first-line">{{ site.data.translations[page.lang].main_header_first }}</span>
+            <span class="header-second-line">{{ site.data.translations[page.lang].main_header_second }}</span>
+        </h1>
+        <div class="explore" id="explore">
+            <video class="first-shot-video" autoplay muted loop playsinline>
+                <source src="../assets/video/first-shot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="darkening-video"></div>
+            <div class="overlay-box" id="overlay-box">
+                <p class="regular-text overlay-box-text">
+                    {{ site.data.translations[page.lang].explore_text }}
+                </p>
+                {% if page.lang == "lv" %}
+                <button class="overlay-button" onclick="location.href='/lv/products'">
+                    <p class="overlay-button-text">{{ site.data.translations[page.lang].explore_button }}</p>
+                    <img class="angled-arrow" >
+                </button>
+                {% else %}
+                <button class="overlay-button" onclick="location.href='/en/products'">
+                    <p class="overlay-button-text">{{ site.data.translations[page.lang].explore_button }}</p>
+                    <img class="angled-arrow" >
+                </button>
+                {% endif %}
+                
+            </div>
+        </div>
+        <div class="about-us">
+            <div class="about-us-image-container">
+                <div class="about-us-image about-us-image-back">
+                    <img src="../assets/images/Back_Image.jpg" alt="Back Image" >
+                </div>
+                <div class="about-us-image about-us-image-front">
+                    <img src="../assets/images/Front_Image.jpg" alt="Front Image">
+                </div>
+                
+            </div>
+            <div class="about-us-text-container">
+                <h1 id="header-01">{{ site.data.translations[page.lang].about_us_title }}</h1>
+                <p class="regular-text about-us-text">
+                    {{ site.data.translations[page.lang].about_us_text }}
+                </p>
+                <div class="link-button-container">
+                    <a class="link-button" href="/{{ page.lang }}/aboutus">
+                        {{ site.data.translations[page.lang].about_us_button }}
+                    </a>
+                    <img class="blue-arrow">
+                </div>
+            </div>
+        </div>
+        <div class="solutions">
+            <h1 class="solution-header" id="header-02"> {{ site.data.translations[page.lang].solutions_header}}</h1>
+            <div class="solutions-text-container">
+                <p class="regular-text solutions-text" >{{ site.data.translations[page.lang].solutions_text}}</p>
+                <div class="link-button-container" style="margin-left: auto;">
+                    <a class="link-button" href="/{{ page.lang }}/products">
+                        {{ site.data.translations[page.lang].products_button }}
+                    </a>
+                    <img class="blue-arrow">
+                </div>
+            </div>
+            <div class="solution-elements-container">
+                <div class="solutions-element">
+                    <p class="solution-element-first solution-element-content">/01</p>
+                    <p class="solution-element-second solution-element-content">{{ site.data.translations[page.lang].solutions_element_first_header}}</p>
+                    <p class="regular-text solution-element-content solution-element-third">{{ site.data.translations[page.lang].solutions_element_first_text}}</p>
+                </div>
+                <div class="solutions-element">
+                    <p class="solution-element-first solution-element-content">/02</p>
+                    <p class="solution-element-second solution-element-content">{{ site.data.translations[page.lang].solutions_element_second_header}}</p>
+                    <p class="regular-text  solution-element-content solution-element-third">{{ site.data.translations[page.lang].solutions_element_second_text}}</p>
+                </div>
+                <div class="solutions-element">
+                    <p class="solution-element-first solution-element-content">/03</p>
+                    <p class="solution-element-second solution-element-content">{{ site.data.translations[page.lang].solutions_element_third_header}}</p>
+                    <p class="regular-text solution-element-content solution-element-third">{{ site.data.translations[page.lang].solutions_element_third_text}}</p>
+                </div>
+                <div class="solutions-element">
+                    <p class="solution-element-first solution-element-content">/04</p>
+                    <p class="solution-element-second solution-element-content">{{ site.data.translations[page.lang].solutions_element_forth_header}}</p>
+                    <p class="regular-text solution-element-content solution-element-third">{{ site.data.translations[page.lang].solutions_element_forth_text}}</p>
+                </div>
+                <div class="solutions-element solutions-element-last">
+                    <p class="solution-element-first solution-element-content">/05</p>
+                    <p class="solution-element-second solution-element-content">{{ site.data.translations[page.lang].solutions_element_fifth_header}}</p>
+                    <p class="regular-text solution-element-content solution-element-third">{{ site.data.translations[page.lang].solutions_element_fifth_text}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="phases">
+                <h1 class="phases-header" id="header-03">{{ site.data.translations[page.lang].phases_header}}</h1>
+                <p class="regular-text phases-text" >{{ site.data.translations[page.lang].phases_text}}</p>
+                <div class="scroll-wrapper">
+                    <!-- Scrollable Content Container -->
+                    <div class="scroll-container">
+                        <div class="scroll-content-box">
+                        <div class="scroll-content-element">
+                                <div class="scroll-content-element-header-container">
+                                    <p class="scroll-content-element-header-left">01.</p> 
+                                    <p class="scroll-content-element-header-right">{{ site.data.translations[page.lang].phase}}</p> 
+                                </div>
+                                <p class="scroll-content-element-second-header">{{ site.data.translations[page.lang].phase_scroll_content_header_first}}</p>
+                                <div class="line"></div> 
+                                <p class="regular-text scroll-content-element-text">{{ site.data.translations[page.lang].phase_scroll_content_text_first}}</p>
+                        </div>
+                            <div class="scroll-content-element">
+                                    <div class="scroll-content-element-header-container">
+                                        <p class="scroll-content-element-header-left">02.</p> 
+                                        <p class="scroll-content-element-header-right">{{ site.data.translations[page.lang].phase}}</p> 
+                                    </div>
+                                    <p class="scroll-content-element-second-header">{{ site.data.translations[page.lang].phase_scroll_content_header_second}}</p>
+                                    <div class="line"></div> 
+                                    <p class="regular-text scroll-content-element-text">{{ site.data.translations[page.lang].phase_scroll_content_text_second}}</p>
+                            </div>
+                            <div class="scroll-content-element">
+                                    <div class="scroll-content-element-header-container">
+                                        <p class="scroll-content-element-header-left">03.</p> 
+                                        <p class="scroll-content-element-header-right">{{ site.data.translations[page.lang].phase}}</p> 
+                                    </div>
+                                    <p class="scroll-content-element-second-header">{{ site.data.translations[page.lang].phase_scroll_content_header_third}}</p>
+                                    <div class="line"></div> 
+                                    <p class="regular-text scroll-content-element-text">{{ site.data.translations[page.lang].phase_scroll_content_text_third}}</p>
+                            </div>
+                            <div class="scroll-content-element">
+                                    <div class="scroll-content-element-header-container">
+                                        <p class="scroll-content-element-header-left">04.</p> 
+                                        <p class="scroll-content-element-header-right">{{ site.data.translations[page.lang].phase}}</p> 
+                                    </div>
+                                    <p class="scroll-content-element-second-header">{{ site.data.translations[page.lang].phase_scroll_content_header_forth}}</p>
+                                    <div class="line"></div> 
+                                    <p class="regular-text scroll-content-element-text">{{ site.data.translations[page.lang].phase_scroll_content_text_forth}}</p>
+                            </div>
+                            <div class="scroll-content-element">
+                                <div class="scroll-content-element-header-container">
+                                    <p class="scroll-content-element-header-left">05.</p> 
+                                    <p class="scroll-content-element-header-right">{{ site.data.translations[page.lang].phase}}</p> 
+                                </div>
+                                <p class="scroll-content-element-second-header">{{ site.data.translations[page.lang].phase_scroll_content_header_fifth}}</p>
+                                <div class="line"></div> 
+                                <p class="regular-text scroll-content-element-text">{{ site.data.translations[page.lang].phase_scroll_content_text_fifth}}</p>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="custom-scroll-track">
+                        <div class="custom-scroll-thumb"></div>
+                    </div>
+                </div>
+        </div>
+        <div class="contact">
+            <div class="contact-left-container"><h1 class="contact-header" id="header-05">{{ site.data.translations[page.lang].contact_header}}</h1></div>
+            <div class="contact-right-container">             
+                <p class="regular-text contact-us-text">
+                {{ site.data.translations[page.lang].contact_us_text }}
+                </p>
+                {% if page.lang == "lv" %}
+                <button class="main-contact-us-button">
+                    <p class="main-contact-us-button-text"  onclick="location.href='/lv/contact'">{{ site.data.translations[page.lang].contact_header}}</p>
+                    <img class="angled-arrow" src="../assets/images/Angled_Arrow_Black.svg">
+                </button>
+                {% else %}
+                <button class="main-contact-us-button">
+                    <p class="main-contact-us-button-text"  onclick="location.href='/en/contact'">{{ site.data.translations[page.lang].contact_header}}</p>
+                    <img class="angled-arrow" src="../assets/images/Angled_Arrow_Black.svg">
+                </button>
+                {% endif %}
+            
+            </div>
+        </div>
+    </div>
+    {% include footer.html %}  <!-- Reusable Footer -->
+    {% include loader.html %}
+</body>
+<script type="text/javascript" src="../assets/scripts/languageButton.js"></script>
+<script type="text/javascript" src="../assets/scripts/solutionsScroll.js"></script>
+<script type="text/javascript" src="../assets/scripts/customScrollBar.js"></script>
+<script type="text/javascript" src="../assets/scripts/sideMoving.js"></script>
+<script type="text/javascript" src="../assets/scripts/movingTextUpAnim.js"></script>
+<script type="text/javascript" src="../assets/scripts/homeLauoutChange.js"></script>
+</html>

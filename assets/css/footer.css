@@ -1,0 +1,159 @@
+
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Regular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Jost-Medium";
+    src: url("../fonts/Jost-Medium.ttf") format("truetype");
+    font-weight: medium;
+    font-style: normal;
+}
+footer{
+    background-color: #0F0F10;
+    padding: 1.35vw;
+    padding-top: 5vw;
+    padding-bottom: 0;
+}
+.footer-logo{
+    margin-left: 44.65vw;
+    width: 8vw;
+    height: 3.456vw;
+    
+}
+.footer-logo-img{
+    width: 8vw;
+    height: 3.456vw;
+}
+.footer-heading{
+    color: #9B9DA0;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1vw;
+    margin-bottom: 1vw;
+}
+.footer-text{
+    color: #D2D4D9;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.15vw;
+    margin-bottom: 0.75vw;
+}
+.footer-info-container{
+    display: grid;
+    grid-template-columns: auto auto max-content;
+    gap: 18vw;
+    margin-top: 5vw;
+}
+.contact-info{
+    margin-right: 0;
+    margin-left: auto;
+}
+.social-media-container{
+    margin-right: 0;
+    margin-left: auto;
+    width: 4.4vw;
+}
+.footer-image{
+    width: 97.3vw;
+    margin-top: -1.3vw;
+}
+
+.footer-button{
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+.footer-button:hover > p {
+    color: #F0F0F2;
+    font-family: "Jost-Medium", Arial, sans-serif;
+    font-weight: medium;
+}
+.footer-menu-container{
+    width: 7vw;
+}
+.footer-btn {
+    background-color:transparent;
+    text-decoration: none;
+    border-radius: 0px;
+    transition: background 0.3s;
+    color: #D2D4D9;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: normal;
+    font-size: 1.15vw;
+   
+    margin: auto;
+    text-wrap: nowrap;
+    display:inline-block;
+    overflow:hidden;
+    position:relative;
+    height: 1.5vw;
+    margin-bottom: 0.75vw;
+}
+.label-up {
+    display:block;
+    height:100%;
+    position:relative;
+    top:0%;
+    transition:0.6s;
+    margin-bottom: 2vw;
+  }
+  
+  .footer-btn:hover .label-up {
+    top:-230%;
+  }
+  @media only screen and (hover: none) and (pointer: coarse), 
+  (max-width: 480px) {
+    footer{
+        padding-top: 12.7vw;
+        padding-bottom: 11.4vw;
+    }
+    .footer-image{
+        display: none;
+    }
+    .footer-logo{
+        margin-left: 35.65vw;
+        width: 26.7vw;
+        height: 11.7vw;
+        
+    }
+    .footer-logo-img{
+        width: 26.7vw;
+        height: 11.7vw;
+    }
+    .footer-heading{
+        font-size: 2.5vw;
+        margin-bottom: 5vw;
+    }
+    .footer-btn {
+        font-size: 3vw;
+        height: 3.6vw;
+        overflow:hidden;
+        margin-bottom: 5.8vw;
+        text-decoration: underline;
+    }
+    .footer-text{
+        font-size: 3vw;
+    }
+    .footer-info-container{
+        display: grid;
+        grid-template-columns: auto auto max-content;
+        gap: 18vw;
+        margin-top: 5vw;
+    }
+    .social-media-container{
+        margin-right: 0;
+        margin-left: auto;
+        width: 11.4vw;
+    }
+  }

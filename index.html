@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const userLang = navigator.language || navigator.userLanguage; // Get browser language
+            if (userLang.startsWith("lv")) {
+                window.location.href = "/lv/";
+            } else {
+                window.location.href = "/en/";
+            }
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>

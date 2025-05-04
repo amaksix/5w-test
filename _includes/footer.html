@@ -1,0 +1,40 @@
+<footer>
+    {% if page.lang == "lv" %}
+    <a href="/lv/" class="footer-logo"><img class="footer-logo-img" src="../assets/images/Logo.png"></a>
+    {% else %}
+    <a href="/en/" class="footer-logo"><img class="footer-logo-img" src="../assets/images/Logo.png"></a>
+    {% endif %}
+    <div class="footer-info-container">
+        <div class="footer-menu-container">
+            {% if page.lang == "lv" %}
+                <p class="footer-heading">Navigācija</p>
+                <a href="/lv/" class="footer-btn"><span class="label-up">Sākums</span><span class="label-up">Sākums</span></a>
+                <a href="/lv/products" class="footer-btn"><span class="label-up">Produkti</span><span class="label-up">Produkti</span></a>
+                <a href="/lv/aboutus" class="footer-btn"><span class="label-up">Par Mums</span><span class="label-up">Par Mums</span></a>
+                <a href="/lv/contact" class="footer-btn"><span class="label-up">Sazinieties ar Mums</span><span class="label-up">Sazinieties ar Mums</span></a>
+            {% else %}
+                <p class="footer-heading">Navigation</p>
+                <a href="/en/" class="footer-btn"><span class="label-up">Home</span><span class="label-up">Home</span></a>
+                <a href="/en/products" class="footer-btn"><span class="label-up">Products</span><span class="label-up">Products</span></a>
+                <a href="/en/aboutus" class="footer-btn"><span class="label-up">About Us</span><span class="label-up">About Us</span></a>
+                <a href="/en/contact" class="footer-btn"><span class="label-up">Contact Us</span><span class="label-up">Contact Us</span></a>
+            {% endif %}
+   
+        </div>
+        <div class="social-media-container">
+            <p class="footer-heading">Social</p>
+            <a href="https://www.linkedin.com/company/5wsolutions/" target="_blank" class="footer-btn"><span class="label-up">LinkedIn</span><span class="label-up">LinkedIn</span></a>
+        </div>
+        <div class="contact-info">
+            <p class="footer-heading">Contact</p>
+            <p class="footer-text">contact@5w.lv</p>
+            <p class="footer-text">+371 27 457 071</p>
+        </div>
+    </div>
+    <img class="footer-image" loading="lazy" src="../assets/images/Footer.png">
+</footer>
+<script>
+function goToHref(href) {
+    window.location.href = href;
+}
+</script>

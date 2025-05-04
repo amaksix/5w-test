@@ -1,0 +1,42 @@
+<header>
+    {% if page.lang == "lv" %}
+    <a href="/lv/" class="home"><img src="../assets/images/Logo.png"></a>
+    {% else %}
+    <a href="/en/" class="home"><img src="../assets/images/Logo.png"></a>
+    {% endif %}
+    <nav>
+        {% if page.lang == "lv" %}
+            <a href="/lv/" class="btn"><span class="label-up">Sākums</span><span class="label-up">Sākums</span></a>
+            <a href="/lv/products" class="btn"><span class="label-up">Produkti</span><span class="label-up">Produkti</span></a>
+            <a href="/lv/aboutus" class="btn"><span class="label-up">Par Mums</span><span class="label-up">Par Mums</span></a>
+            <a href="/lv/contact" class="btn"><span class="label-up">Sazinieties ar Mums</span><span class="label-up">Sazinieties ar Mums</span></a>
+        {% else %}
+            <a href="/en/" class="btn"><span class="label-up">Home</span><span class="label-up">Home</span></a>
+            <a href="/en/products" class="btn"><span class="label-up">Products</span><span class="label-up">Products</span></a>
+            <a href="/en/aboutus" class="btn"><span class="label-up">About Us</span><span class="label-up">About Us</span></a>
+            <a href="/en/contact" class="btn"><span class="label-up">Contact Us</span><span class="label-up">Contact Us</span></a>
+        {% endif %}
+    </nav>
+    <div class="right-part-header">
+        <div class="languages-container">
+            <div id="languages-dropdown" class="languages hidden">
+                <div class="languages-button-container">
+                    <a id="english" hreflang="en" class="languages-button"  href="/en{{ page.url | remove_first:'/en' | remove_first:'/lv' }}">English</a>
+                </div>
+                <div class="languages-button-container">
+                    <a id="latvian" hreflang="lv" class="languages-button" href="/lv{{ page.url | remove_first:'/en' | remove_first:'/lv' }}" >Latviešu</a>
+                </div>
+            </div>
+            {% if page.lang == "lv" %}
+            <button id="languages-button" class="selected-language"><div class="selected-language-text-container"><span class="selected-language-text" id="selected-language-text">Latviešu</span><img id="arrow"class="arrow" src="../assets/images/Arrow_Bottom.svg"></div></button>   
+            {% else %}
+            <button id="languages-button" class="selected-language"><div class="selected-language-text-container"><span class="selected-language-text" id="selected-language-text">English</span><img id="arrow"class="arrow" src="../assets/images/Arrow_Bottom.svg"></div></button>   
+            {% endif %}
+        </div>
+        {% if page.lang == "lv" %}
+        <button onclick="location.href='/lv/products'" class="LearnMore">Uzzināt Vairāk</button>
+        {% else %}
+        <button onclick="location.href='/en/products'" class="LearnMore">Learn More</button>
+        {% endif %}
+    </div>
+</header>

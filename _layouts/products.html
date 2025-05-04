@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang }}">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta name="description" content="{{ site.data.translations[page.lang].meta_products_description }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    <link rel="alternate" hreflang="en" href="https://www.5w.lv/en/products" />
+    <link rel="alternate" hreflang="lv" href="https://www.5w.lv/lv/products" />
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" href="../assets/css/general.css">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/footer.css">
+    <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/32х32.png">
+    
+    <link rel="icon" href="../assets/images/16х16.png" sizes="16x16" type="image/png">
+    <!-- Larger favicon for high-resolution displays (32x32px) -->
+    <link rel="icon" href="../assets/images/32х32.png" sizes="32x32" type="image/png">
+    <!-- Optional: 48x48px favicon for some browsers or desktop apps -->
+    <link rel="icon" href="../assets/images/48х48.png" sizes="48x48" type="image/png">
+</head>
+<body>
+    {% include header.html %}  <!-- Reusable Header -->
+    <div class="main" >
+        <h1 class="products-main-header" id="header-01">{{ site.data.translations[page.lang].products_header }}</h1>
+        <div class="products-description">
+            <div class="products-description-left-container">
+                <img class="products-description-image" src="../assets/images/Products_Left_Image.png">
+                <div class="products-description-left-container-content">
+                    <p class="products-description-content-header">{{ site.data.translations[page.lang].products_description_header }}</p>
+                    <p class="regular-text products-description-content-text">{{ site.data.translations[page.lang].products_description_text }}</p>
+                </div>
+            </div>
+            <img class="products-description-image" src="../assets/images/Products_Right_Image.png">
+        </div>
+        <div class="learn-more-container">
+            <img class="learn-more-arrow-down" src="../assets/images/Arrow_Down.svg">
+            {% if page.lang == "en" %}
+                <img class="learn-more-circle" src="../assets/images/Learn_More_Circle.png">
+            {% else %}
+                <img class="learn-more-circle" src="../assets/images/Learn_More_Circle_LV.png">
+            {% endif %}
+        </div>
+        <div class="products-container">
+            <div class="product-container" id="product1">
+                <div class="product-image-container">
+                    <img src="../assets/images/Product_First.jpg" class="product-image">
+                </div>
+                <div class="product-content-middle">
+                    <p class="product-content-middle-first-header">{{ site.data.translations[page.lang].first_product_content_middle_first_header }}</p>
+                    <p class="regular-text">{{ site.data.translations[page.lang].first_product_content_middle_first_text }}</p>
+                    <p class="product-content-middle-second-header">{{ site.data.translations[page.lang].first_product_content_middle_second_header }}</p>
+                    <ul class="product-content-middle-list">
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].first_product_content_middle_list_01 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].first_product_content_middle_list_02 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].first_product_content_middle_list_03 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].first_product_content_middle_list_04 }}</li>
+                    </ul>
+                </div>
+                <div class="product-content-right">
+                    <p class="product-content-right-header">{{ site.data.translations[page.lang].first_product_content_right_header }}</p>
+                    <ul class="product-content-right-list">
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].first_product_content_right_list_01 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].first_product_content_right_list_02 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].first_product_content_right_list_03 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].first_product_content_right_list_04 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].first_product_content_right_list_05 }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-container" id="product2">
+                <div class="product-image-container">
+                    <img src="../assets/images/Product_Second.jpg" class="product-image">
+                </div>
+                <div class="product-content-middle">
+                    <p class="product-content-middle-first-header">{{ site.data.translations[page.lang].second_product_content_middle_first_header}}</p>
+                    <p class="regular-text">{{ site.data.translations[page.lang].second_product_content_middle_first_text }}</p>
+                    <p class="product-content-middle-second-header">{{ site.data.translations[page.lang].second_product_content_middle_second_header }}</p>
+                    <ul class="product-content-middle-list">
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].second_product_content_middle_list_01 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].second_product_content_middle_list_02 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].second_product_content_middle_list_03 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].second_product_content_middle_list_04 }}</li>
+                    </ul>
+                </div>
+                <div class="product-content-right">
+                    <p class="product-content-right-header">{{ site.data.translations[page.lang].second_product_content_right_header }}</p>
+                    <ul class="product-content-right-list">
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].second_product_content_right_list_01 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].second_product_content_right_list_02 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].second_product_content_right_list_03 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].second_product_content_right_list_04 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].second_product_content_right_list_05 }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-container" id="product3">
+                <div class="product-image-container">
+                    <img src="../assets/images/Product_Third.jpg" class="product-image">
+                </div>
+                <div class="product-content-middle">
+                    <p class="product-content-middle-first-header">{{ site.data.translations[page.lang].third_product_content_middle_first_header}}</p>
+                    <p class="regular-text">{{ site.data.translations[page.lang].third_product_content_middle_first_text }}</p>
+                    <p class="product-content-middle-second-header">{{ site.data.translations[page.lang].third_product_content_middle_second_header }}</p>
+                    <ul class="product-content-middle-list">
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].third_product_content_middle_list_01 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].third_product_content_middle_list_02 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].third_product_content_middle_list_03 }}</li>
+                    </ul>
+                </div>
+                <div class="product-content-right">
+                    <p class="product-content-right-header">{{ site.data.translations[page.lang].third_product_content_right_header }}</p>
+                    <ul class="product-content-right-list">
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].third_product_content_right_list_01 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].third_product_content_right_list_02 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].third_product_content_right_list_03 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].third_product_content_right_list_04 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].third_product_content_right_list_05 }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-container" id="product4">
+                <div class="product-image-container">
+                    <img src="../assets/images/Product_Forth.jpg" class="product-image">
+                </div>
+                <div class="product-content-middle">
+                    <p class="product-content-middle-first-header">{{ site.data.translations[page.lang].forth_product_content_middle_first_header }}</p>
+                    <p class="regular-text">{{ site.data.translations[page.lang].forth_product_content_middle_first_text }}</p>
+                    <p class="product-content-middle-second-header">{{ site.data.translations[page.lang].forth_product_content_middle_second_header }}</p>
+                    <ul class="product-content-middle-list">
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].forth_product_content_middle_list_01 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].forth_product_content_middle_list_02 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].forth_product_content_middle_list_03 }}</li>
+                    </ul>
+                </div>
+                <div class="product-content-right">
+                    <p class="product-content-right-header">{{ site.data.translations[page.lang].forth_product_content_right_header }}</p>
+                    <ul class="product-content-right-list">
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].forth_product_content_right_list_01 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].forth_product_content_right_list_02 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].forth_product_content_right_list_03 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].forth_product_content_right_list_04 }}</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="product-container" id="product5">
+                <div class="product-image-container">
+                    <img src="../assets/images/Product_Fifth.jpg" class="product-image">
+                </div>
+                <div class="product-content-middle">
+                    <p class="product-content-middle-first-header">{{ site.data.translations[page.lang].fifth_product_content_middle_first_header }}</p>
+                    <p class="regular-text">{{ site.data.translations[page.lang].fifth_product_content_middle_first_text }}</p>
+                    <p class="product-content-middle-second-header">{{ site.data.translations[page.lang].fifth_product_content_middle_second_header }}</p>
+                    <ul class="product-content-middle-list">
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].fifth_product_content_middle_list_01 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].fifth_product_content_middle_list_02 }}</li>
+                        <li class="regular-text product-content-middle-list-elem"><span class="custom-bullet"></span>{{ site.data.translations[page.lang].fifth_product_content_middle_list_03 }}</li>
+                    </ul>
+                </div>
+                <div class="product-content-right">
+                    <p class="product-content-right-header">{{ site.data.translations[page.lang].fifth_product_content_right_header }}</p>
+                    <ul class="product-content-right-list">
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].fifth_product_content_right_list_01 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].fifth_product_content_right_list_02 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].fifth_product_content_right_list_03 }}</li>
+                        <li class="regular-text product-content-right-list-elem"><span class="custom-bullet-second"></span>{{ site.data.translations[page.lang].fifth_product_content_right_list_04 }}</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="products-bottom-section-container">
+            <img src="../assets/images/Aurora.svg" class="products-bottom-section-image">
+            <div class="products-bottom-section-right-container">
+                <p class="regular-text products-bottom-section-right-text">{{ site.data.translations[page.lang].products-bottom-section-right-text }}</p>
+            </div>
+            <div class="products-bottom-section-left-container">
+                <div class="products-bottom-section-left-container-content">
+                    <p class="products-bottom-section-left-container-content-header">{{ site.data.translations[page.lang].products-bottom-section-left-container-content-header }}</p>
+                    {% if page.lang == "lv" %}
+                    <button onclick="location.href='/5w/lv/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
+                    {% else %}
+                    <button onclick="location.href='/5w/en/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+      
+    </div>
+    {% include footer.html %}  <!-- Reusable Footer -->
+    {% include loader.html %}
+</body>
+<script type="text/javascript" src="../assets/scripts/languageButton.js"></script>
+<script type="text/javascript" src="../assets/scripts/stackingAnim.js"></script>
+<script type="text/javascript" src="../assets/scripts/movingTextUpAnim.js"></script>
+</html>

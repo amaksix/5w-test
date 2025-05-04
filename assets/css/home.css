@@ -1,0 +1,467 @@
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-Bold.ttf") format("truetype");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-Medium.ttf") format("truetype");
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Mulish";
+    src: url("../fonts/Mulish-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+}
+html, body {
+    overflow-x: hidden;
+  }
+.main-header{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the first line */
+    text-align: left; /* Default text alignment */
+    width: 100%;
+    color: #F0F0F2;
+    z-index: 2;
+    margin-top: 8vw;
+}
+.header-first-line{
+    text-align: center;
+    width: 100%;
+}
+.header-second-line{
+    text-align: center;
+    width: 100%;
+}
+.explore {
+    position: relative; /* Set the container as the reference for stacking */
+    width: 100vw;
+    margin-left: -1.35vw;
+    height: 56.25vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow:hidden;
+    background-color: #0F0F10;
+}
+
+.first-shot-video {
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Allows the box to overlap on top */
+    left: 0; /* Position from left */
+}
+.darkening-video{
+    width: 100%;
+    height: 100%;
+    position: absolute; /* Allows the box to overlap on top */
+    left: 0; /* Position from left */
+    z-index: 1;
+    background-color: rgba(15, 15, 16, 0.6);
+}
+
+.overlay-box {
+    position: absolute; /* Allows the box to overlap on top */
+    bottom: 2.5vw; /* Position from bottom */
+    left: 2.5vw; /* Position from left */
+    background-color: #F0F0F2;
+    border-radius: 1vw;
+    width: 30vw;
+    height: 13vw;
+    padding: 3.38vw 1.875vw;
+    z-index: 2; /* Ensure the box is on top of the video */
+    display: grid;
+}
+.overlay-box-text{
+    margin-bottom: 2vw;
+}
+.overlay-button{
+    border-radius: 0.73vw;
+    border: solid;
+    border-width: 0.13vw;
+    border-color: #0F0F10;
+    background-color: #0F0F10;
+    color:#F0F0F2;
+    width: 18.75vw;
+    height: 3.4vw;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5vw;
+    padding: 1.1vw;
+    align-self: end;
+    line-height: 1vw;
+}
+.overlay-button > .angled-arrow
+{
+    content:url("../images/Angled_Arrow.svg");
+}
+.overlay-button:hover > .angled-arrow
+{
+    content:url("../images/Angled_Arrow_Black.svg");
+}
+.overlay-button:hover{
+    background-color: transparent;
+    color:#0F0F10;
+}
+.overlay-button-text{
+    text-align: right;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1vw;
+}
+
+.about-us{
+    margin-top:18vw;
+    margin-bottom: 18vw;
+    display: grid;
+    grid-template-columns: auto 30vw;
+}
+
+.about-us-image-container {
+    position: relative;
+    margin-top: -6vw;
+}
+.about-us-image-container > .about-us-image {
+    position: absolute;
+    width: 34vw; /* Ensure both images are the same size */
+    height: 33vw;
+}
+.about-us-image{
+    border-radius: 1.8vw;
+    overflow: hidden;
+}
+.about-us-image > img{
+    width: 34vw; /* Ensure both images are the same size */
+    height: 33vw;
+}
+.about-us-image-back {
+    top: 2vw;
+    left: 14vw;
+    z-index: 1;
+}
+.about-us-image-front {
+    z-index: 2;
+}
+.angled-arrow{
+    width:0.9vw;
+    height: 0.9vw;
+}
+.link-button-container{
+    display: grid;
+    grid-template-columns:  max-content max-content;
+    gap:1.4vw;
+    height: 1.7vw;
+}
+.about-us-text
+{
+    margin-bottom: 2.4vw;
+}
+.link-button{
+    color: #305CDE;
+    line-height: 0.5vw;
+    text-decoration: underline;
+    text-underline-offset: 0.5vw; /* Adjust this value as needed */
+    transition: text-underline-offset 0.5s ease;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1vw;
+    margin-top: 0.2vw;
+}
+.link-button-container:hover >.link-button{
+    color: #0F0F10;
+    text-decoration: underline;
+    text-underline-offset: 1vw; /* Adjust this value as needed */
+}
+.link-button-container:hover > .blue-arrow{
+    content:url("../images/Angled_Arrow_Black.svg");
+    transform: rotate(45deg);
+}
+.blue-arrow{
+    width:1.1vw;
+    height:0.9vw;
+    content:url("../images/Blue_Arrow.svg");
+}
+.solutions-text-container{
+    display: grid;
+    grid-template-columns:  auto auto;
+}
+.solutions-text{
+    width: 65vw;
+}
+.solutions-element{
+    height: 7.2vw;
+    border: 0;
+    border-top: 0.13vw solid  #E1E2E5;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:  13.1vw auto 50.5vw;
+    background-color: transparent;
+}
+.solutions-element-hover{
+    background-color: #E1E2E5;
+    border: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-columns:  13.1vw auto 50.5vw;
+    width: 95%;
+    height: 7.2vw;
+    padding-left: 3.85%;
+    padding-right: 3.85%;
+    margin-left: -1.35vw;
+}
+.solutions-element-hovered-higher{
+    border: 0;
+}
+.solution-element-content-hover{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #0F0F10;
+}
+.solution-element-first-hover{
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+    margin-left: 2vw;
+}
+
+.solution-element-third-hover{
+    color: #535458;
+    margin-right: 4vw;
+}
+.solution-element-second-hover{
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 1.4vw;
+}
+.solutions-element-last{
+    border-bottom: 0.13vw solid  #E1E2E5;
+}
+.solutions-element-last-hovered{
+    border: 0;
+}
+.solution-elements-container{
+    margin-top:3.5vw;
+}
+.solution-element-content{
+    margin-top: auto;
+    margin-bottom: auto;
+    color: #535458;
+}
+.solution-element-first{
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.4vw;
+    margin-left: 2vw;
+    color:#9B9DA0;
+}
+
+.solution-element-second{
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.4vw;
+}
+.solution-element-third{
+    margin-right: 4.1vw;
+    color:#9B9DA0;
+}
+.phases{
+    margin-top: 11.8vw;
+}
+.phases-header{
+    text-align: center; 
+    width:82%; 
+    margin-left: auto;
+    margin-right: auto;
+}
+.phases-text{
+    text-align: center;
+
+}
+
+ /* Container with horizontal scroll */
+
+  /* Content inside the container */
+  .scroll-content-box {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 0.5vw;
+    padding-bottom:5vw;
+  }
+  .scroll-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    padding-top: 2vw;
+    
+    /* Hide default scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit browsers */
+}
+
+/* Custom scrollbar track */
+.custom-scroll-track {
+    position: relative;
+    width: 75%; /* Adjust as needed */
+    height: 1vw; /* Same as scrollbar height */
+    background: url('../images/ScrollTrack.svg') no-repeat center;
+    background-size: cover;
+    margin: auto;
+   
+}
+/* Prevent selection globally while dragging */
+.no-select {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Prevent selection on the scrollbar thumb itself */
+.custom-scroll-thumb {
+    user-select: none;
+}
+
+/* Custom scrollbar thumb */
+.custom-scroll-thumb {
+    position: absolute;
+    width: 10vw; /* Set thumb size */
+    height:2vw;
+    margin-top: -0.5vw;
+    background: url('../images/Button_SCROLL.svg') no-repeat center;
+    background-size: contain;
+    cursor: grab;
+}
+.custom-scroll-thumb:hover {
+    width: 10.1vw; /* Set thumb size */
+    height:2.1vw;
+    margin-top: -0.55vw;
+}
+.custom-scroll-thumb:active {
+    width: 10.1vw; /* Set thumb size */
+    height:2.1vw;
+    margin-top: -0.55vw;
+}
+.scroll-content-element{
+    width: 24vw;
+    height:21vw;
+    border-radius: 1.1vw;
+    border:0.13vw solid #D2D4D9;
+    padding:2vw;
+}
+.scroll-content-element-active{
+    width: 24vw;
+    height:21vw;
+    border-radius: 1.1vw;
+    background: linear-gradient(#779FEE, #F0F0F2);
+    padding:2vw;
+}
+.scroll-content-element-header-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.scroll-content-element-header-left{
+    color:#D2D4D9;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 700;
+    font-size:3.4vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.scroll-content-element-header-right{
+    text-align: right;
+    color:#D2D4D9;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 1.1vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.scroll-content-element-header-left-active{
+    color:#0F0F10;
+}
+.scroll-content-element-header-right-active{
+    color:#0F0F10;
+}
+.scroll-content-element-second-header{
+    color: #0f0f10;;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 700;
+    font-size:2vw;
+    margin-top: 1.5vw;
+}
+.line{
+    border-bottom: 0.13vw solid  #D2D4D9;
+    height: 0;
+    margin-top: 0.75vw;
+    margin-bottom: 1.20vw;
+}
+.line-active{
+    border-bottom: 0.13vw solid #0F0F10;
+}
+.scroll-content-element-text{
+    text-wrap: wrap;
+}
+.contact{
+    margin-top:13.8vw;
+    margin-bottom: 13.8vw;
+    display: grid;
+    grid-template-columns:  auto 31vw;
+}
+.contact-header{
+    margin-top:2.7vw;
+}
+.main-contact-us-button{
+    margin-top: 3.4vw;
+    background-color: #779FEE;
+    border: solid;
+    border-width: 0.13vw;
+    border-color: #779FEE;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.5vw;
+    border-radius: 0.9vw;
+    height:3vw;
+    padding: 1.7vw;
+    padding-top: 0.9vw;
+    padding-bottom: 0.8vw;
+    line-height: 1vw;
+}
+.main-contact-us-button:hover{
+    background-color: transparent;
+}
+.main-contact-us-button-text{
+    font-family: "Jost","Arial", sans-serif;
+    font-weight: 500;
+    color: #0F0F10;
+    font-size: 1vw;
+    text-align: right;
+    white-space: nowrap;
+}
+.solution-header{
+    width: 71vw;
+}
+

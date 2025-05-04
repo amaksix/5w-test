@@ -1,0 +1,104 @@
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Regular.ttf") format("ttf");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Jost";
+    src: url("../fonts/Jost-Bold.ttf") format("ttf");
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+  font-family: "Mulish";
+  src: url("../fonts/Mulish-ExtraBold.ttf") format("ttf");
+  font-weight: 800;
+  font-style: normal;
+}
+html, body {
+  max-width: 100%;
+}
+.highlight-text{
+  color:#779FEE;
+}
+.main{
+  padding-left: 1.35vw;
+  padding-right: 1.35vw;
+}
+.letter {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20%);
+  transition: transform 1s ease, opacity 1s ease;
+  }
+  /* Special handling for spaces */
+  .space {
+      width: 0.3em; /* Adjust the width of spaces */
+      display: inline-block;
+  }
+body {
+    margin: 0;
+    background-color: #F0F0F2;
+}
+.regular-text{
+  color: #535458;
+  font-family: "Jost", Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.1vw;
+  line-height: 140%;
+}
+p{
+    margin: 0;
+   
+}
+h1{
+  font-family: "Mulish", Arial, sans-serif;
+  font-weight:800;
+  font-size: 4.5vw;
+  text-transform: uppercase;
+}
+
+html:not(.scroll-container),
+body:not(.scroll-container) {
+  scrollbar-width:0; /* For Firefox */
+  
+}
+
+/* For Webkit Browsers (Chrome, Edge, Safari) */
+html:not(.scroll-container)::-webkit-scrollbar,
+body:not(.scroll-container)::-webkit-scrollbar {
+  width: 2px; /* General scrollbar width */
+}
+
+html:not(.scroll-container)::-webkit-scrollbar-track,
+body:not(.scroll-container)::-webkit-scrollbar-track {
+  background:transparent; /* General track color */
+  border-radius: 10px; /* General rounded corners */
+}
+
+html:not(.scroll-container)::-webkit-scrollbar-thumb,
+body:not(.scroll-container)::-webkit-scrollbar-thumb {
+  background: #aaa; /* General thumb color */
+  border-radius: 10px; /* General rounded corners */
+}
+
+html:not(.scroll-container)::-webkit-scrollbar-thumb:hover,
+body:not(.scroll-container)::-webkit-scrollbar-thumb:hover {
+  background: #888; /* General hover thumb color */
+}
+
+@media only screen and (hover: none) and (pointer: coarse), 
+(max-width: 480px) {
+h1{
+  font-size: 7.1vw;
+}
+.regular-text{
+  font-size: 3vw;
+}
+.main{
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+}
