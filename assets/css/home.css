@@ -464,4 +464,9 @@ html, body {
 .solution-header{
     width: 71vw;
 }
-
+.sol-button-mob{
+    display: none;
+}
+.sol-button{
+    display: block;
+}

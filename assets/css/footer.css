@@ -115,8 +115,10 @@ footer{
   @media only screen and (hover: none) and (pointer: coarse), 
   (max-width: 480px) {
     footer{
+        padding: 5vw;
         padding-top: 12.7vw;
         padding-bottom: 11.4vw;
+       
     }
     .footer-image{
         display: none;
@@ -132,24 +134,25 @@ footer{
         height: 11.7vw;
     }
     .footer-heading{
-        font-size: 2.5vw;
+        font-size: 3vw;
         margin-bottom: 5vw;
     }
     .footer-btn {
-        font-size: 3vw;
-        height: 3.6vw;
+        font-size: 3.5vw;
+        height: 5vw;
         overflow:hidden;
         margin-bottom: 5.8vw;
         text-decoration: underline;
+        text-underline-offset: 1vw;
     }
     .footer-text{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .footer-info-container{
         display: grid;
         grid-template-columns: auto auto max-content;
         gap: 18vw;
-        margin-top: 5vw;
+        margin-top: 12.7vw;
     }
     .social-media-container{
         margin-right: 0;

@@ -15,11 +15,15 @@
         z-index: 2; /* Ensure the box is on top of the video */
         display: grid;
         margin-top: 11.7vw;
+        left: 0vw; /* Position from left */
     }
     .overlay-box-text{
         text-align: center;
         width:91.8vw;
         margin: auto;
+    }
+    .first-shot-video {
+        width: 112%;
     }
     .overlay-button{
         border-radius: 3vw;
@@ -40,7 +44,7 @@
         margin-top: 9vw;
     }
     .overlay-button-text{
-        font-size:3vw;
+        font-size:3.5vw;
 
     }
     .overlay-button > .angled-arrow
@@ -85,7 +89,7 @@
         line-height: 2vw;
         text-decoration: underline;
         text-underline-offset: 2vw; /* Adjust this value as needed */
-        font-size:3vw;
+        font-size:3.5vw;
     }
     .link-button-container:hover >.link-button{
         text-decoration: underline;
@@ -226,7 +230,7 @@
         background-color: transparent;
     }
     .main-contact-us-button-text{
-        font-size: 3vw;
+        font-size: 3.5vw;
     }
     .angled-arrow{
         width: 2.5vw;
@@ -262,7 +266,7 @@
 }
 .scroll-content-element-header-right{
     font-weight: 400;
-    font-size:3vw;
+    font-size:3.5vw;
 }
 .scroll-content-element-second-header{
     color: #0f0f10;;
@@ -302,5 +306,11 @@
     width: 27vw; /* Set thumb size */
     height:8vw;
     margin-top: -1.5vw;
+}
+.sol-button-mob{
+    display: block;
+}
+.sol-button{
+    display: none;
 }
 }
