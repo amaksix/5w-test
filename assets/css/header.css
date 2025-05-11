@@ -209,6 +209,7 @@ nav {
     }
     .header-menu-button{
         border: 0;
+        background-color: transparent;
     }
     .mob-header-container{
         position: absolute;
@@ -239,6 +240,7 @@ nav {
         width: 7.8vw;
         height: 6.6vw;
         margin-bottom: 13.7vw;
+        background-color: transparent;
     }
     .header-close-button > img{
         width: 7.8vw;
