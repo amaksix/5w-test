@@ -218,7 +218,7 @@ nav {
         z-index: 5;
         left: 0;
         top: 0;
-        transition: 0.5s;
+        transition: 0.3s;
         opacity: 1;
     }
     .mob-header-container-hidden{
@@ -230,7 +230,7 @@ nav {
         z-index: -1;
         left: 0;
         top: 0;
-        transition: 0.5s;
+        transition: 0.3s;
     }
     .header-close-button{
         margin-left: 80vw;
