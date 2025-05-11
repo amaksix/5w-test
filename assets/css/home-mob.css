@@ -288,6 +288,7 @@
 .custom-scroll-track {
     width: 90%; /* Adjust as needed */
     height: 5vw; /* Same as scrollbar height */
+    margin-top: 5vw;
    
 }
 /* Custom scrollbar thumb */

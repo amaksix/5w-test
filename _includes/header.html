@@ -1,4 +1,5 @@
 <header>
+<div class="desktop-header">
     {% if page.lang == "lv" %}
     <a href="/lv/" class="home"><img src="../assets/images/Logo.png"></a>
     {% else %}
@@ -39,4 +40,64 @@
         <button onclick="location.href='/en/products'" class="LearnMore">Learn More</button>
         {% endif %}
     </div>
+</div>
+<div class="mob-header">
+    <div class="mob-header-menu">
+        {% if page.lang == "lv" %}
+        <a href="/lv/" class="home"><img src="../assets/images/Logo.png"></a>
+        {% else %}
+        <a href="/en/" class="home"><img src="../assets/images/Logo.png"></a>
+        {% endif %}
+        <div class="header-menu">
+            <button class="header-menu-button" onclick="OpenNav()">
+                <img src="../assets/images/Mob_Burger.svg">
+            </button>
+        </div>
+
+    </div>
+    <div id="mob-nav-header-container" class="mob-header-container-hidden">
+        <button class="header-close-button" onclick="OpenNav()"><img src="../assets/images/Mob_Header_Close.svg"></button>
+        <nav>
+            {% if page.lang == "lv" %}
+                <a href="/lv/" class="btn-mob">Sākums</a>
+                <a href="/lv/products" class="btn-mob">Produkti</a>
+                <a href="/lv/aboutus" class="btn-mob">Par Mums</a>
+                <a href="/lv/contact" class="btn-mob">Sazinieties ar Mums</a>
+            {% else %}
+                <a href="/en/" class="btn-mob">Home</a>
+                <a href="/en/products" class="btn-mob">Products</a>
+                <a href="/en/aboutus" class="btn-mob">About Us</a>
+                <a href="/en/contact" class="btn-mob">Contact Us</a>
+            {% endif %}
+        </nav>
+        <div  class="mob-languages-container">
+            <div class="languages-button-container-mob">
+                {% if page.lang == "lv" %}
+                <a id="english" hreflang="en" class="languages-button-mob"  href="/en{{ page.url | remove_first:'/en' | remove_first:'/lv' }}">En</a>
+                {% else %}
+                <a id="english" hreflang="en" class="languages-button-mob languages-button-mob-selected"  href="/en{{ page.url | remove_first:'/en' | remove_first:'/lv' }}">En</a>
+                {% endif %}
+            </div>
+            <div class="languages-button-container-mob">
+                {% if page.lang == "lv" %}
+                <a id="latvian" hreflang="lv" class="languages-button-mob languages-button-mob-selected" href="/lv{{ page.url | remove_first:'/en' | remove_first:'/lv' }}" >Lv</a>
+                {% else %}
+                <a id="latvian" hreflang="lv" class="languages-button-mob" href="/lv{{ page.url | remove_first:'/en' | remove_first:'/lv' }}" >Lv</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function OpenNav(){
+        var container =  document.getElementById("mob-nav-header-container");
+        if(container.classList.contains('mob-header-container-hidden'))
+        {
+            container.classList.replace("mob-header-container-hidden", "mob-header-container");
+        }else{
+            container.classList.replace("mob-header-container", "mob-header-container-hidden");
+        }
+    }
+</script>
 </header>

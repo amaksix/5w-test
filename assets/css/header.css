@@ -26,7 +26,7 @@ header {
     text-align: center;
     display: flex;
 }
-a > img{
+.home > img{
     width:5.4vw;
     height: 2.6vw;
 }
@@ -166,7 +166,120 @@ nav {
 .LearnMore:hover{
     background-color: transparent;
 }
+.desktop-header
+{
+    display: block;
+}
+.mob-header{
+    display: none;
+}
 @media only screen and (hover: none) and (pointer: coarse), 
 (max-width: 480px) {
-    
+    .desktop-header
+    {
+        display: none;
+    }
+    .mob-header{
+        display: block;
+    }
+    .mob-header-menu{
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 65vw;
+    }
+    header {
+       
+        padding-left: 4vw;
+        padding-right: 4vw;
+        padding-top: 16vw;
+        padding-bottom: 5.8vw;
+        text-align: center;
+        height: 13vw;
+    }
+    .home{
+        display: inline;
+    }
+    .home > img{
+        width: 16vw;
+        height: 7vw;
+    }
+    .header-menu{
+        margin-top: 2.5vw;
+    }
+    .header-menu-button{
+        border: 0;
+    }
+    .mob-header-container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #F0F0F2;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        transition: 0.5s;
+        opacity: 1;
+    }
+    .mob-header-container-hidden{
+        opacity: 0;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #F0F0F2;
+        z-index: 5;
+        left: 0;
+        top: 0;
+        transition: 0.5s;
+    }
+    .header-close-button{
+        margin-left: 80vw;
+        margin-top: 16.7vw;
+        border: 0;
+        width: 7.8vw;
+        height: 6.6vw;
+        margin-bottom: 13.7vw;
+    }
+    .header-close-button > img{
+        width: 7.8vw;
+        height: 6.6vw;
+        padding: 0;
+    }
+    nav {
+        display: grid;
+        justify-content: center;
+        gap: 7vw;
+        height: 45vw;
+    }
+    .btn-mob {
+        background-color:transparent;
+        color: #0F0F10;
+        text-decoration: none;
+        border-radius: 0px;
+        font-family: "Jost", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 4vw;
+        margin: auto;
+        text-wrap: nowrap;
+        position:relative;
+    }
+    .mob-languages-container{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-top: 15vw;
+        width: 18.8vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .languages-button-mob{
+        color: #0F0F10;
+        font-family: "Jost", Arial, sans-serif;
+        font-weight: 400;
+        font-size: 4vw;
+        background: none;
+        border: none;
+        text-decoration: none;
+    }
+    .languages-button-mob-selected{
+        font-weight: 500;
+    }
 }

@@ -5,7 +5,6 @@ window.addEventListener('DOMContentLoaded', function() {
     });
   });
 function moveChild(parentID,childID) {
-    console.log("test");
     const parent = document.getElementById(parentID);
     const child = document.getElementById(childID);
     var mediaQuery = window.matchMedia('(hover: none) and (pointer: coarse),(max-width: 480px)');
