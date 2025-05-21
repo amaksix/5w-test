@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/products.css">
+    <link rel="stylesheet" href="../assets/css/products-mob.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/32х32.png">
     
     <link rel="icon" href="../assets/images/16х16.png" sizes="16x16" type="image/png">
@@ -36,6 +37,7 @@
                 </div>
             </div>
             <img class="products-description-image" src="../assets/images/Products_Right_Image.png">
+             <img class="products-description-image-mob" src="../assets/images/Products_Right_Image_Mob.png">
         </div>
         <div class="learn-more-container">
             <img class="learn-more-arrow-down" src="../assets/images/Arrow_Down.svg">
@@ -44,6 +46,10 @@
             {% else %}
                 <img class="learn-more-circle" src="../assets/images/Learn_More_Circle_LV.png">
             {% endif %}
+        </div>
+        <div class="products-description-content-mob">
+            <p class="products-description-content-header">{{ site.data.translations[page.lang].products_description_header }}</p>
+            <p class="regular-text products-description-content-text">{{ site.data.translations[page.lang].products_description_text }}</p>
         </div>
         <div class="products-container">
             <div class="product-container" id="product1">

@@ -229,7 +229,6 @@ input::placeholder {
     background-color: #779FEE;
     border-color: #779FEE;
     border-width: 0.13vw;
-
     border-radius: 0.9vw;
     font-family: "Jost", Arial, sans-serif;
     font-weight: 500;
@@ -239,4 +238,129 @@ input::placeholder {
 }
 .close-popup-button:hover{
    background-color: transparent;
+}
+   .first-block-form-header{
+        display: block;
+    }
+    .first-block-form-header-mob{
+        display: none;
+    }
+@media only screen and (hover: none) and (pointer: coarse), 
+(max-width: 480px) {
+    .first-block-form-header{
+        display: none;
+    }
+    .first-block-form-header-mob{
+        display: block;
+        color: #0F0F10;
+        font-size: 4.5vw;
+        font-family: "Mulish", Arial, sans-serif;
+        font-weight: 700;
+        margin-bottom: 8.9vw;
+        margin-left: 4vw;
+        margin-right: 4vw;
+    }
+    .contact-us-first-block{
+    display:block;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 32.5vw;
+}
+.first-block-image-container{
+    border-radius:0;
+    overflow: auto;
+    width:100%;
+    margin-bottom: 10vw;
+}
+.first-block-image{
+    width:100%;
+}
+label{
+    color: #0F0F10;
+    font-size: 3.5vw;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: 400;
+    margin-bottom: 2.2vw;
+    display: block;
+}
+input{
+    width: 87.8vw;
+    height: 10vw;
+    border-radius:2vw;
+    font-size: 3.5vw;
+    padding-left: 4vw;
+    margin-bottom: 5vw;
+    border: 0.25vw solid #9B9DA0;  
+}
+.message-input-field{
+    border: 0.25vw solid #9B9DA0;  
+    text-align: start;
+    width: 87.8vw;
+    height: 30.5vw;
+    border-radius: 2vw;
+    font-size: 3.5vw;
+    padding-left: 4vw;
+    margin-bottom: 9vw;
+    padding-top: 1.2vw;
+}
+.message-button{
+   width: 91.8vw;
+    height: 10.9vw;
+    border-radius: 3vw;
+    background-color: #0F0F10;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2.7vw;
+    margin-top: 2vw;
+}
+.message-button > .angled-arrow
+{
+   width: 2.5vw;
+    height: 2.5vw;
+    content:url("../images/Angled_Arrow.svg");
+    margin-top: 1.5vw;
+}
+
+.message-button-text{
+    text-align: right;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: 500;
+    font-size:3.5vw;
+}
+
+    .contact-us-second-block{
+    background-color: #E1E2E5;
+    padding-top: 14.7vw;
+    padding-bottom: 14.7vw;
+    margin-bottom: 35.6vw;
+}
+.first-block-form-container{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.contact-us-second-block{
+    display: block;
+}
+.second-block-header{
+    margin-bottom: 6.6vw;
+    font-size: 5vw;
+}
+.second-block-first-section-container{
+    margin-bottom: 10vw;
+}
+.second-block-first-section-container>p{
+    text-align: center;
+}
+.second-block-second-section-container{
+    margin-bottom: 10vw;
+}
+.second-block-second-section-container>p{
+    text-align: center;
+}
+.second-block-third-section-container>p{
+    text-align: center;
+}
+.second-block-third-section-container>a{
+    margin-left: 32.5vw;
+}
 }

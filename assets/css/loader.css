@@ -72,3 +72,26 @@
     content: "Loading";
     animation: loadingDots 1.5s infinite steps(4);
   }
+  @media only screen and (hover: none) and (pointer: coarse), 
+(max-width: 480px) {
+      .second-loader-image {
+    background-image: url("../images/Loader.png");
+    width:63.6vw;
+    height: 63.6vw;
+
+}
+    .loading-logo{
+   
+    width: 23.9vw;
+    display: block; 
+    position: absolute;
+}
+.loader-text-container{
+    margin-top: 90vw;
+    text-align: left;
+    width: 15vw;
+}
+    .loader-text{
+    font-size: 3.4vw;
+}
+}

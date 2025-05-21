@@ -115,6 +115,9 @@
     {
         margin-bottom: 0vw;
     }
+    .solution-elements-container{
+        margin-top:9vw;
+    }
     .solution-header{
         width: 100%;
     }
@@ -156,7 +159,7 @@
         grid-row: 1; /* first row */
         font-family: "Mulish", Arial, sans-serif;
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
         color:#9B9DA0;
       }
       .solution-element-second {
@@ -164,7 +167,7 @@
         grid-row: 1; /* first row */
         font-family: "Mulish", Arial, sans-serif;
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
       }
       
       .solution-element-third {
@@ -178,7 +181,7 @@
         grid-row: 1; /* first row */
         font-family: "Mulish", Arial, sans-serif;
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
 
       }
       
@@ -187,7 +190,7 @@
         grid-row: 1; /* first row */
         font-family: "Mulish", Arial, sans-serif;
         font-weight: 400;
-        font-size: 3.5vw;
+        font-size: 4.5vw;
       }
       
       .solution-element-third-hover {
@@ -256,7 +259,7 @@
 }
 .scroll-content-element-active{
     width: 60.3vw;
-    height:60.9vw;
+    height:65.9vw;
     border-radius: 4vw;
     padding:5vw;
 }

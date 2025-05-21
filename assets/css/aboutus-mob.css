@@ -1,0 +1,136 @@
+.aboutus-third-block-container-mob{
+    display: none;
+}
+.aboutus-third-block-container{
+    display:block;
+}
+@media only screen and (hover: none) and (pointer: coarse), 
+(max-width: 480px) {
+    body{
+       overflow-x: hidden;
+    }
+    .aboutus-first-container{
+    text-align: center;
+    margin: auto;
+    width: 91.8vw;
+    margin-bottom: 10vw;
+}
+.aboutus-second-container{
+    margin: auto;
+    display: block;
+    margin-bottom: 35.6vw;
+    width: 91.8vw;
+}
+.aboutus-second-container > h1{
+    text-align: center;
+    
+}
+.aboutus-second-container > p{
+    text-align: center;
+    margin-top: 7.6vw;
+}
+.aboutus-third-block-text{
+    width: 100%;
+    margin-top: 9vw;
+    margin-bottom: 10vw;
+}
+.aboutus-third-block-container-mob{
+    display: block;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    text-align: left;
+    margin-bottom: 35vw;
+}
+.aboutus-third-block-container{
+    display:none;
+}
+   
+/* Container with horizontal scroll */
+
+  /* Content inside the container */
+  .scroll-content-box {
+     display: flex;
+        gap: 9vw;
+    padding-bottom:0vw;
+  }
+  .scroll-container {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+    margin: auto;
+    padding-top: 2vw;
+    
+    /* Hide default scrollbar */
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+    display: none; /* Hide scrollbar in Webkit browsers */
+}
+
+/* Custom scrollbar track */
+.custom-scroll-track {
+    position: relative;
+    width:100%; /* Adjust as needed */
+    height: 1vw; /* Same as scrollbar height */
+    background: url('../images/About_Us_scrollBar.png') no-repeat center;
+    background-size: cover;
+    margin: auto;
+   
+}
+/* Prevent selection globally while dragging */
+.no-select {
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Prevent selection on the scrollbar thumb itself */
+.custom-scroll-thumb {
+    user-select: none;
+}
+
+/* Custom scrollbar thumb */
+.custom-scroll-thumb {
+    position: absolute;
+    background: url('../images/About_Us_Scroll_Thumb.png') no-repeat center;
+    background-size: contain;
+    cursor: grab;
+    width: 16.1vw; /* Set thumb size */
+    height: 1vw;
+}
+.custom-scroll-thumb:hover {
+    width: 16.1vw; /* Set thumb size */
+    height:2.1vw;
+    margin-top: -0.55vw;
+}
+.custom-scroll-thumb:active {
+    width: 16.1vw; /* Set thumb size */
+    height:2.1vw;
+    margin-top: -0.55vw;
+}
+.approach-block-content{
+    width: 50vw;
+    text-align: left;
+    margin-bottom: 12.7vw;
+}
+.approach-block-number{
+    font-size: 7vw;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 500;
+    color: #D2D4D9;
+    margin-bottom: 9vw;
+}
+.approach-block-header{
+    font-size: 4.5vw;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 500;
+    color: #0F0F10;
+    margin-bottom:5vw;
+}
+.approach-block-text{
+    color:#535458;
+    text-wrap: wrap;
+}
+}

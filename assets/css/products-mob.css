@@ -1,0 +1,133 @@
+.products-description-image-mob{
+    display: none;
+}
+.products-description-image{
+    display: block;
+}
+.products-description-content-mob
+{
+    display: none;
+}
+@media only screen and (hover: none) and (pointer: coarse), 
+(max-width: 480px) {
+    .products-description-left-container{
+    display: none;
+}
+.products-description{
+    display: block;
+}
+.products-description-image-mob{
+    display: block;
+    width: 100vw;
+}
+.products-description-image{
+    display: none;
+}
+.learn-more-container{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width:12.9vw;
+    height:12.9vw;
+    margin-top: 7.6vw;
+    margin-bottom: 7.6vw;
+}
+.learn-more-arrow-down{
+    position: absolute;
+    top:90%;
+    left:65%;
+    width:3.5vw
+}
+.learn-more-circle{
+    position: absolute;
+    top:1vw;
+    left: -2vw;
+    width:24.9vw;
+}
+.product-container {
+    position: relative;
+    top: 0vw;
+    border-top-left-radius: 4vw;
+    border-top-right-radius: 4vw;
+    border-top: 0.25vw solid #E1E2E5;
+    height: max-content;
+    width: 90%;
+    display: block;
+    margin-left: 2vw;
+    gap: 4vw;
+    padding-top: 6vw;
+    padding-left: 4vw;
+    padding-right: 4vw;
+    margin-bottom: 8.6vw;
+    z-index: 0; /* Start with all having 0 z-index */
+    transition: z-index 0.3s ease-out;
+    background-color: #F0F0F2;
+}
+.product-image-container{
+    border-radius: 4vw;
+    height: 70vw;
+    margin-bottom: 7.6vw;
+}
+.product-image{
+    width: 95vw;
+    margin-top: -15vw;
+}
+.main{
+  padding-left: 0vw;
+  padding-right: 0vw;
+  overflow: hidden;
+}
+.product-content-middle-first-header{
+    font-size: 4.5vw;
+    margin-bottom: 6.6vw;
+}
+.product-content-right-header{
+    font-size: 4vw;
+    margin-bottom: 6.6vw;
+}
+.product-content-middle-second-header{
+    font-size: 4vw;
+    margin-top: 0vw;
+    margin-bottom: 6.6vw;
+    margin-top: 11.4vw;
+}
+.custom-bullet {
+    width: 1.27vw;  /* Custom width */
+    height: 1.27vw; /* Custom height */
+    background-color: #779FEE; /* Custom color */
+    border-radius: 50%; /* Makes it circular */
+    flex-shrink: 0;
+}
+.product-content-right-list-elem{
+    display: flex;
+    align-items: start;
+    gap: 3.5vw; /* Space between bullet and text */
+    margin-bottom: 5vw; /* Space between list items */
+}
+.product-content-middle-list-elem{
+    display: flex;
+    align-items: center;
+      gap: 3.5vw; /* Space between bullet and text */
+    margin-bottom: 2vw; /* Space between list items */
+}
+.products-description-content-mob
+{
+    display: block;
+    margin-top: 23vw;
+    margin-bottom: 7.6vw;
+}
+.products-description-content-header{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92vw;
+    color: #0F0F10;
+}
+.products-description-content-text{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 92vw;
+    color: #535458;
+}
+}

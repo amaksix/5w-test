@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/footer.css">
     <link rel="stylesheet" href="../assets/css/aboutus.css">
+    <link rel="stylesheet" href="../assets/css/aboutus-mob.css">
     <link rel="icon" type="image/x-icon" href="../assets/images/32х32.png">
     
     <link rel="icon" href="../assets/images/16х16.png" sizes="16x16" type="image/png">
@@ -50,6 +51,46 @@
         <div class="aboutus-second-container">
             <h1 style="margin: 0;" id="header-02">{{ site.data.translations[page.lang].aboutus_second_header}}</h1>
             <p class="regular-text">{{ site.data.translations[page.lang].aboutus_second_text}}</p>
+        </div>
+        <div class="aboutus-third-block-container-mob">
+            <h1 style="margin: 0;" id="header-03">{{ site.data.translations[page.lang].aboutus_third_header}}</h1>
+            <p class="regular-text aboutus-third-block-text">{{ site.data.translations[page.lang].aboutus_third_text}}</p>
+            <div class="scroll-wrapper">
+                <!-- Scrollable Content Container -->
+                <div class="scroll-container">
+                     <div class="scroll-content-box">
+                        <div class="approach-block-content">
+                            <p class="approach-block-number">01</p>
+                            <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_01}}</p>
+                            <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_01}}</p>
+                        </div>
+                         <div class="approach-block-content">
+                            <p class="approach-block-number">02</p>
+                            <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_02}}</p>
+                            <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_02}}</p>
+                        </div>
+                          <div class="approach-block-content">
+                            <p class="approach-block-number">03</p>
+                            <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_03}}</p>
+                            <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_03}}</p>
+                        </div>
+                          <div class="approach-block-content">
+                            <p class="approach-block-number">04</p>
+                            <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_04}}</p>
+                            <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_04}}</p>
+                        </div>
+                          <div class="approach-block-content">
+                            <p class="approach-block-number">05</p>
+                            <p class="approach-block-header">{{ site.data.translations[page.lang].approach_block_header_05}}</p>
+                            <p class="regular-text approach-block-text">{{ site.data.translations[page.lang].approach_block_text_05}}</p>
+                        </div>
+                    </div>
+                  
+                </div>   
+                 <div class="custom-scroll-track">
+                        <div class="custom-scroll-thumb"></div>
+                </div>         
+            </div>   
         </div>
         <div class="aboutus-third-block-container">
             <h1 style="margin: 0;" id="header-03">{{ site.data.translations[page.lang].aboutus_third_header}}</h1>
@@ -171,4 +212,5 @@
 <script type="text/javascript" src="../assets/scripts/languageButton.js"></script>
 <script type="text/javascript" src="../assets/scripts/movingTextUpAnim.js"></script>
 <script type="text/javascript" src="../assets/scripts/aboutUsTransition.js"></script>
+<script type="text/javascript" src="../assets/scripts/customScrollBar.js"></script>
 </html>
