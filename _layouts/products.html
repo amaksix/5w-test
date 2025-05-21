@@ -187,12 +187,22 @@
                 <div class="products-bottom-section-left-container-content">
                     <p class="products-bottom-section-left-container-content-header">{{ site.data.translations[page.lang].products-bottom-section-left-container-content-header }}</p>
                     {% if page.lang == "lv" %}
-                    <button onclick="location.href='/5w/lv/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
+                    <button onclick="location.href='/lv/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
                     {% else %}
-                    <button onclick="location.href='/5w/en/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
+                    <button onclick="location.href='/en/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
                     {% endif %}
                 </div>
             </div>
+        </div>
+         <div class="products-bottom-section-container-mob">
+            <img src="../assets/images/Aurora_Mob.svg" class="products-bottom-section-image">
+            <p class="products-bottom-section-left-container-content-header">{{ site.data.translations[page.lang].products-bottom-section-left-container-content-header }}</p>
+            <p class="regular-text products-bottom-section-right-text">{{ site.data.translations[page.lang].products-bottom-section-right-text }}</p>
+            {% if page.lang == "lv" %}
+            <button onclick="location.href='/lv/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
+            {% else %}
+            <button onclick="location.href='/en/contact'" class="products-bottom-section-left-container-button" ><p class="products-bottom-section-left-container-button-text">{{ site.data.translations[page.lang].products-bottom-section-left-container-button-text }}</p><img class="angled-arrow" ></button>
+            {% endif %}
         </div>
       
     </div>

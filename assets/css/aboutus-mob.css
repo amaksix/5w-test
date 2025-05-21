@@ -4,8 +4,31 @@
 .aboutus-third-block-container{
     display:block;
 }
+.aboutus-forth-block-image-mob{
+    display: none;
+}
+.aboutus-forth-block-image{
+    display: block;
+}
+.aboutus-fifth-block-container-mob{
+    display: none;
+}
+.aboutus-fifth-block-container{
+    display: block;
+}
+.aboutus-forth-block-image-container-mob{
+
+    display: none;
+
+}
+.aboutus-forth-block-image-container{
+    display: block;
+}
 @media only screen and (hover: none) and (pointer: coarse), 
 (max-width: 480px) {
+    :root {
+    --transition:0;
+  }
     body{
        overflow-x: hidden;
     }
@@ -132,5 +155,184 @@
 .approach-block-text{
     color:#535458;
     text-wrap: wrap;
+}
+.aboutus-forth-block-container{
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+.aboutus-forth-block-header{
+    text-align: center;
+}
+.aboutus-forth-block-content{   
+    display: block;
+    margin-bottom: 35vw;
+    margin-top: 0vw;
+}
+.forth-block-content-container {
+    display: grid;
+    grid-template-columns: auto 27.5vw;
+    gap: 12vw;
+    height: 9.4vw;
+    border-top: 0.13vw solid #E1E2E5;
+    align-items: center; /* Center child elements vertically */
+    transition: 0;
+}
+.aboutus-forth-block-image-container-mob{
+    width:115%;
+    height: 131vw;
+    border-radius:0;
+    overflow: hidden;
+    display: block;
+    position:relative;
+    margin-left: -4vw;
+}
+.aboutus-forth-block-image-container{
+    display: none;
+}
+.aboutus-forth-block-image{
+     display: none;
+}
+.aboutus-forth-block-image-mob{
+    display: block;
+    width:100%;
+    height: 131vw;
+}
+.forth-block-content-container {
+    display: block;
+    height: 37vw;
+    border-top: 0.25vw solid #E1E2E5;
+    align-items: center; /* Center child elements vertically */
+    transition: 0;
+}
+.forth-block-content-header{
+    font-size: 4.5vw;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 500;
+    color: #0F0F10;
+    margin-left: 0;   
+    transition: 0;
+    margin-top: 7.6vw;
+    margin-bottom: 7.6vw;
+}
+.aboutus-fifth-block-container-mob{
+    display: block;
+}
+.aboutus-fifth-block-container{
+    display: none;
+}
+.aboutus-fifth-block-container-mob{
+    height: 207.3vw;
+    background-color: #0F0F10;
+    padding-top: 14.5vw;
+    transition: 0;
+    position: relative;
+}
+.aboutus-fifth-block-header{
+    color:#F0F0F2;
+    margin-left:0;
+    margin-top: 0;
+    margin-bottom: 11.7vw;
+    text-align: center;
+    font-size: 7vw;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.aboutus-fifth-block-content-container{
+    height: 53.9vw;
+    width: 91.8vw;
+    margin-left: 4vw;
+    border-radius: 4vw;
+    border: 0.25vw solid #39393B;
+    margin-bottom: 5vw;
+    display: block;
+}
+.aboutus-fifth-block-content-text{
+    color:#9B9DA0;
+    margin-left:17.8vw;
+    margin-top: 2vw;
+    width: 67.4vw;
+}
+.aboutus-fifth-block-content-header{
+    color:#F0F0F2;
+    margin-left: 17.8vw;
+    margin-top: 3.3vw;
+    font-size: 4.5vw;
+    margin-bottom: 6.6vw;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 500;
+    transition: var(--transition);
+}
+.aboutus-fifth-block-content-image{
+    filter: invert(94%) sepia(6%) saturate(82%) hue-rotate(188deg) brightness(100%) contrast(86%);
+    width: 8.9vw;
+    height: 8.9vw;
+    transition: var(--transition);
+    margin-left: 6.3vw;
+    margin-top: 6.1vw;
+}
+.aboutus-sixt-block-container{
+    background-color: #F0F0F2;
+    height: 100vw;
+    padding: 0;
+}
+.aboutus-sixt-block-header{
+    color: #0F0F10;
+    width: 70vw;
+    text-align: center;
+    font-size: 4.5vw;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 700;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35.6vw;
+    margin-bottom: 6.6vw;
+}
+.aboutus-sixt-block-text{
+    width: 70vw;
+    text-align: center;
+    color: #535458;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.aboutus-contact-us-button{
+    margin-top: 7.6vw;
+    background-color: #779FEE;
+    border: solid;
+    border-width: 0.13vw;
+    border-color: #779FEE;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;
+    border-radius: 2.5vw;
+    height:8.5vw;
+    padding: 8.3vw;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+    line-height: 1vw;
+    color:#0F0F10;
+}
+.aboutus-contact-us-button:hover{
+    background-color: transparent;
+}
+.aboutus-contact-us-button:hover > .aboutus-contact-us-button-text{
+    color: #0F0F10;
+}
+.aboutus-contact-us-button:hover > .angled-arrow{
+    content:url("../images/Angled_Arrow_Black.svg");
+}
+.aboutus-contact-us-button-text{
+    text-align: right;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+}
+.angled-arrow{
+    width: 2.5vw;
+    height: 2.5vw;
+    content:url("../images/Angled_Arrow_Black.svg");
+    margin-top: -0.75vw;
 }
 }

@@ -8,6 +8,12 @@
 {
     display: none;
 }
+.products-bottom-section-container-mob{
+    display: none;
+}
+.products-bottom-section-container{
+    display: block;
+}
 @media only screen and (hover: none) and (pointer: coarse), 
 (max-width: 480px) {
     .products-description-left-container{
@@ -130,4 +136,89 @@
     width: 92vw;
     color: #535458;
 }
+.products-bottom-section-container-mob{
+    display: block;
+    position: relative;
+    margin-left: 4vw;
+    margin-bottom: 34vw;
+    margin-top: 34vw;
+}
+.products-bottom-section-container{
+    display: none;
+    
+}
+.products-bottom-section-image{
+    width:91.8vw;
+    height: 96vw;
+   
+}
+.products-bottom-section-left-container-content-header{
+    text-align: center;
+      color:#0F0F10;
+    font-size: 4.5vw;
+    font-family: "Mulish", Arial, sans-serif;
+    font-weight: 700;
+    width: 70vw;
+    z-index: 1;
+    position: absolute;
+    top:  17vw;
+    left: 11.4vw;
+}
+.products-bottom-section-right-text{
+    position: absolute;
+    width: 70vw;
+    left: 11.4vw;
+    top:40vw;
+    text-align: center;
+    color: #535458;
+}
+.products-bottom-section-left-container-button{
+        margin-top: 3.4vw;
+    background-color: #779FEE;
+    border: solid;
+    border-width: 0.13vw;
+    border-color: #779FEE;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 2vw;
+    border-radius: 2.5vw;
+    height:8.5vw;
+    padding: 8.3vw;
+    padding-top: 3.5vw;
+    padding-bottom: 3.5vw;
+    line-height: 1vw;
+    color:#0F0F10;
+    position: absolute;
+    left: 26vw;
+    top:68vw;
+}
+.products-bottom-section-left-container-button > .angled-arrow
+{
+    width: 2.5vw;
+    height: 2.5vw;
+    content:url("../images/Angled_Arrow_Black.svg");
+    margin-top: -0.5vw;
+}
+.products-bottom-section-left-container-button:hover > .angled-arrow
+{
+    content:url("../images/Angled_Arrow_Black.svg");
+}
+.products-bottom-section-left-container-button:hover{
+    background-color: transparent;
+    color:#0F0F10;
+}
+.products-bottom-section-left-container-button-text{
+    text-align: right;
+    font-family: "Jost", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 3.5vw;
+}
+.custom-bullet-second {
+    width: 6.3vw;  /* Custom width */
+    height:0.25vw; /* Custom height */
+    border-top: 0.07vw solid #779FEE;
+    flex-shrink: 0;
+    margin-top: 2.2vw;
+}
+
 }

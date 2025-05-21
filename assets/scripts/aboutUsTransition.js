@@ -1,4 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
+     var mediaQuery = window.matchMedia('(hover: none) and (pointer: coarse),(max-width: 480px)');
+    if (!mediaQuery.matches)  {
     const block = document.querySelector(".aboutus-fifth-block-container");
     const one =  document.querySelector(".aboutus-fifth-block-left-content-container");
     const two =  document.querySelector(".aboutus-fifth-block-left-right-top-content-container");
@@ -66,4 +68,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
     window.addEventListener("scroll", handleScroll);
     handleScroll(); // Run once on load in case the element is already in view
+}
 });
